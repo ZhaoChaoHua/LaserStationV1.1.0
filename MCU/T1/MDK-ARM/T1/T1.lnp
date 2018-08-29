@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"t1\startup_stm32f103xb.o"
+"t1\main.o"
+"t1\gpio.o"
+"t1\spi.o"
+"t1\stm32f1xx_it.o"
+"t1\stm32f1xx_hal_msp.o"
+"t1\stm32f1xx_hal_gpio_ex.o"
+"t1\stm32f1xx_hal_spi.o"
+"t1\stm32f1xx_hal_spi_ex.o"
+"t1\stm32f1xx_hal_tim.o"
+"t1\stm32f1xx_hal_tim_ex.o"
+"t1\stm32f1xx_hal.o"
+"t1\stm32f1xx_hal_rcc.o"
+"t1\stm32f1xx_hal_rcc_ex.o"
+"t1\stm32f1xx_hal_gpio.o"
+"t1\stm32f1xx_hal_dma.o"
+"t1\stm32f1xx_hal_cortex.o"
+"t1\stm32f1xx_hal_pwr.o"
+"t1\stm32f1xx_hal_flash.o"
+"t1\stm32f1xx_hal_flash_ex.o"
+"t1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "T1\T1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "T1.map" -o T1\T1.axf
